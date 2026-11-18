@@ -1,0 +1,326 @@
+{
+  "$schema": "dak-task-annotations/v1",
+  "bpmn": "CHUD_A.bpmn",
+  "process": "CHUD.A",
+  "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+  "heading": "Process A: Provision of epidemiological data — business process notes and annotations",
+  "tasks": [
+    {
+      "bpmnTask": "Activity_06699yf",
+      "activityId": "CHUD.A2",
+      "name": "Evaluate the patient against clinical case definition",
+      "description": "- The healthcare worker performs an evaluation of the patient's symptoms against dengue clinical case definition, following the available clinical guidelines and guidance.\n- Guidelines: DENGUE Guidelines.pdf",
+      "personas": [
+        "Healthcare worker"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "2"
+      }
+    },
+    {
+      "bpmnTask": "Gateway_1u0p04k",
+      "activityId": "CHUD.A3",
+      "name": "Is the dengue clinical case definition met?",
+      "description": "- The healthcare worker decides if the symptoms the patient presents meet the definition of a dengue case. In case the clinical case definition is not met, other relevant clinical services are offered (step 15).",
+      "personas": [
+        "Healthcare worker"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "3"
+      }
+    },
+    {
+      "bpmnTask": "Gateway_156uhvj",
+      "activityId": "CHUD.A4",
+      "name": "Is a laboratory test required?",
+      "description": "- The healthcare worker determines whether a laboratory test is required to confirm the suspected case, according to the national protocols.\n- In dengue-endemic countries laboratory confirmation is not necessary before notification but should be obtained.\n- Guidelines: DENGUE Guidelines.pdf\n- 2.3.1 A stepwise approach to the management of dengue (see Table 2.2)",
+      "personas": [
+        "Healthcare worker"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "4"
+      }
+    },
+    {
+      "bpmnTask": "Activity_0sa1f47",
+      "activityId": "CHUD.A5",
+      "name": "Notify the case",
+      "description": "- The healthcare worker reports the case to the facility surveillance team. The reporting should be automated, based on the data collected during the clinical encounter, and should be performed electronically through the electronic surveillance system.\n- At this point it is determined if the case is considered a suspected, probable or confirmed case\n- Early notification of dengue cases seen in primary and secondary care is crucial for identifying outbreaks and initiating an early response\n- \"Passive surveillance\" is the routine reporting of diseases, by which notification is usually initiated by health care providers. A particular challenge of passive surveillance systems is continuously to motivate health care providers to report cases in accordance with standardized case definitions. Unfortunately, in many dengue endemic countries, surveillance is only passive and relies on reports by local physicians who may not consider dengue in their differential diagnosis and/or fail to report cases quickly and routinely. As a result, an epidemic has often reached or passed its peak before it is recognized, and opportunities for control are missed. Designating dengue as a notifiable disease that is covered by public health legislation is one way to increase compliance with reporting\n- This step represents the generation of case-based epidemiological data. It captures detailed patient demographics and risk factors required for immediate outbreak investigation and high-resolution model calibration\n- Guidelines: DENGUE Guidelines.pdf\n- 2.3.1 A stepwise approach to the management of dengue (see Table 2.2)",
+      "personas": [
+        "Healthcare worker"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "5"
+      }
+    },
+    {
+      "bpmnTask": "Activity_1xkbqcp",
+      "activityId": "CHUD.A6",
+      "name": "Check the data quality",
+      "description": "- The data reported by the healthcare workers are reviewed for accuracy, validity and completeness.\n- This can be supported through automated checks in a digital system.",
+      "personas": [
+        "Facility surveillance officer"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "6"
+      }
+    },
+    {
+      "bpmnTask": "Gateway_0tk8h9x",
+      "activityId": "CHUD.A7",
+      "name": "Were data quality issues found?",
+      "description": "",
+      "personas": [
+        "Facility surveillance officer"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "7"
+      }
+    },
+    {
+      "bpmnTask": "Activity_12wa7ne",
+      "activityId": "CHUD.A8",
+      "name": "Correct fixable data quality issues",
+      "description": "- Where possible, inaccurate, invalid or incomplete data should be checked against source records and corrected according to the national standard operating procedures.\n- Depending on local policy, this step might need to be delegated to a person with the appropriate data access rights.",
+      "personas": [
+        "Healthcare worker"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "8"
+      }
+    },
+    {
+      "bpmnTask": "Activity_002w25i",
+      "activityId": "CHUD.A9",
+      "name": "Generate facility-level reports",
+      "description": "- The facility surveillance officer generates reports containing facility level data.",
+      "personas": [
+        "Facility surveillance officer"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "9"
+      }
+    },
+    {
+      "bpmnTask": "Activity_17huvkj",
+      "activityId": "CHUD.A10",
+      "name": "Submit facility-level data electronically",
+      "description": "- This can be automated and done digitally.\n- Depending on the local policies and system design, an active \"submission\" may not be needed and the higher administrative levels (district, region, national authorities) should be able to access data directly in the system, for reporting purposes.",
+      "personas": [
+        "Facility surveillance officer"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "10"
+      }
+    },
+    {
+      "bpmnTask": "Activity_16thm7b",
+      "activityId": "CHUD.A11",
+      "name": "Compile and verify aggregate reports",
+      "description": "- The surveillance officer, at a higher administrative level, generates aggregate reports of predefined indicators aligned with national dengue monitoring and evaluation guidelines.\n- Once generated, the reports are checked for any potential remaining data quality issues such as implausible values or outputs.\n- This can be automated and done digitally.",
+      "personas": [
+        "District/regional/national surveillance officer"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "11"
+      }
+    },
+    {
+      "bpmnTask": "Gateway_1li3sa3",
+      "activityId": "CHUD.A12",
+      "name": "Were issues found in the reports?",
+      "description": "- If so, the surveillance officer requests fixes for the issues (step 16). If no issues were identified, the flow continues with step 13 (Analyze and interpret the reports).",
+      "personas": [
+        "District/regional/national surveillance officer"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "12"
+      }
+    },
+    {
+      "bpmnTask": "Activity_12omr7z",
+      "activityId": "CHUD.A13",
+      "name": "Analyze and interpret the reports",
+      "description": "- The analyses and interpretation of the reports should identify opportunities to improve the performance of the health-care facility workers, such as tracing missing data or contacting patients who have not attended a clinic.\n- Data analysis and interpretation can be done regularly and should not be limited to the reporting schedule.",
+      "personas": [
+        "District/regional/national surveillance officer"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "13"
+      }
+    },
+    {
+      "bpmnTask": "Activity_0hyuty7",
+      "activityId": "CHUD.A14",
+      "name": "Submit data electronically",
+      "description": "- This can be automated and done digitally.\n- Depending on the local policies and system design, an active \"submission\" may not be needed and the district-level, provincial-level and national-level ministry of health should be able to access data directly in the system, for reporting purposes.",
+      "personas": [
+        "District/regional/national surveillance officer"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "14"
+      }
+    },
+    {
+      "bpmnTask": "Activity_14qd3tk",
+      "activityId": "CHUD.A15",
+      "name": "Provide other relevant clinical services",
+      "description": "- The health worker offers other relevant clinical and support services, including referrals, to the patient if dengue case definitions are not met. The services proposed are specific to each patient and clinical condition(s).",
+      "personas": [
+        "Healthcare worker"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "15"
+      }
+    },
+    {
+      "bpmnTask": "Activity_0q3ctpc",
+      "activityId": "CHUD.A16",
+      "name": "Request fixes",
+      "description": "- In case the surveillance officer identifies issues in the reports, they request necessary fixes.\n- If the source of issues is represented by data quality, the fixes will be addressed at data collection level (step 8. Correct fixable data quality issues).",
+      "personas": [
+        "District/regional/national surveillance officer"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "16"
+      }
+    },
+    {
+      "bpmnTask": "Activity_0nsx28c",
+      "activityId": "CHUD.A17",
+      "name": "Provide feedback to the healthcare workers",
+      "description": "- The surveillance officer or the surveillance team at the facility, district or national level will provide feedback to the healthcare workers who reported the data. The purpose of feedback is to reinforce health workers' efforts at participating in the surveillance system. Another purpose is to raise awareness about certain diseases and any achievements made by disease-control and prevention projects in the area. Feedback is classified as supportive when it reinforces and acknowledges good performance, and corrective, when a change in behaviour and improvement is required.\n- If data quality issues are identified, the facility may be required to restart the process and resubmit the data.\n- Guidelines and guidance: Integrated disease surveillance response in the WHO African region. Booklet four: sections 8 and 9\n- 8.5.2 Feedback",
+      "personas": [
+        "District/regional/national surveillance officer"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "17"
+      }
+    },
+    {
+      "bpmnTask": "Activity_0ixt2cd",
+      "activityId": "CHUD.A18",
+      "name": "Plan actions based on the feedback",
+      "description": "- The facility surveillance officer reviews the feedback and formulates a targeted action plan to address identified issues or reinforce positive practices.\n- The plan may include corrective measures for data quality improvement, training needs, workflow adjustments, or reinforcement of successful practices.",
+      "personas": [
+        "Facility surveillance officer"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "18"
+      }
+    },
+    {
+      "bpmnTask": "Activity_03f2vr8",
+      "activityId": "CHUD.A19",
+      "name": "Take actions based on the feedback",
+      "description": "- Healthcare workers who submitted the data carry out the actions outlined in the action plan.\n- Implementation should be guided by the surveillance officer and may involve collaboration with other staff, adherence to updated procedures, or participation in follow-up activities.",
+      "personas": [
+        "Healthcare worker"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "19"
+      }
+    }
+  ],
+  "unmatched": [
+    {
+      "item": "1",
+      "name": "Patient presents with dengue symptoms",
+      "reason": "the list prints no step numbers, and no BPMN node has this name"
+    }
+  ],
+  "unannotated": [
+    "Activity_0gt3zi6",
+    "Activity_1bfu0cf"
+  ]
+}
