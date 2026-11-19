@@ -1,0 +1,132 @@
+{
+  "$schema": "dak-task-annotations/v1",
+  "bpmn": "CHUD_C.bpmn",
+  "process": "CHUD.C",
+  "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+  "heading": "Process C: Data unification — business process notes and annotations",
+  "tasks": [
+    {
+      "bpmnTask": "Activity_07jm6t6",
+      "activityId": "CHUD.C1",
+      "name": "Define spatial and temporal parameters",
+      "description": "- For epidemiological and entomological data, the type of data (real-time, historical, aggregate, case-based) required for model execution should be determined based on the model's specifications. This may influence the retrieval process and access methods. Please refer to model documentation for specific requirements.\n- For climate and weather data, the type of data required will depend on dengue prediction model being used or developed. To identify the appropriate data, the region/location, the spatial resolution (e.g. 25 km), the type and range (e.g. forecast range, hindcast range, reanalysis), and the update frequency (e.g. weekly) must be specified. These specifications enable the data analyst to understand which sources of data are required.\n- The epidemiological and entomological data and climate and weather data should match in spatial and temporal parameters for unification.",
+      "personas": [
+        "Data Analyst"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "1"
+      }
+    },
+    {
+      "bpmnTask": "Activity_0fdyefc",
+      "activityId": "CHUD.C2",
+      "name": "Subscribe to relevant WIS2 datasets",
+      "description": "- 2.1 Find data/products in the WIS2 Global Discovery Catalogue: The first step to using data published via WIS2 is to determine which dataset or datasets contain the data that are needed. To do this, a data consumer, in our case the data unification system, may browse discovery metadata provided by the Global Discovery Catalogue.\n- A data consumer may discover a dataset using keywords, a geographic area of interest, temporal information, or free text. Matching search results from the Global Discovery Catalogue provide high-level information (title, description, keywords, spatiotemporal extents, data policy, licensing, contact information), from which data consumers can assess and evaluate their interest in accessing/downloading data associated with the dataset record.\n- 2.2 Find data/products via search engines: Internet search engines are able to index the discovery metadata in the Global Discovery Catalogue, thereby providing data consumers with an alternative means to search for WIS2 data.\n- 2.3 Subscribe to topics via WIS2 Global Broker: Data consumers requiring real-time notifications must subscribe to Global Brokers. Data consumers should subscribe to more than one Global Broker to ensure that notifications continue to be received if a Global Broker instance fails.\n- Data consumers should subscribe to notifications from a Global Broker, not to notifications directly from the Message Brokers operated by WIS2 Nodes.\n- WIS2 provides notifications about updates to datasets, for example, when a new observation record from an automatic weather station is added to a dataset of surface observations. These notifications are published on Message Brokers. Where data consumers need to use data rapidly once they have been published (for example, as inputs to a weather prediction model), they should subscribe to one or more Global Brokers to get notification messages using Message Queuing Telemetry Transport (MQTT) protocol.\n- Guidelines: Guide to the WMO Information System, Volume II. WMO Information System 2.0. WMO-No. 1061",
+      "personas": [
+        "Data Analyst"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "2"
+      }
+    },
+    {
+      "bpmnTask": "Activity_1386ecs",
+      "activityId": "CHUD.C3",
+      "name": "Retrieve meteorological data/products from WIS2",
+      "description": "- On receipt of a notification message, a data consumer needs to decide whether to download the newly available data. The content of the notification message provides the information needed to make this decision (see the Manual on WIS, Volume II – Appendix E. WIS2 Notification Message).\n- Once decided, the data unification system, playing the data consumer role, retrieves the meteorological data from:\n- Global Cache: The Global Caches are designed to help Members efficiently share real-time and near-real-time data. They ensure that core data are available to all on a free and unrestricted basis, as required by the WMO Unified Data Policy (Resolution 1 (Cg-Ext(2021))).\n- WIS2 Node: If frequent updates to a dataset are very large (for example, in the case of weather prediction models or remote sensing observations) data publishers will need to share the burden of distributing their data with Global Cache operators. Therefore, the data consumer might need to access the data directly from the Data publisher's WIS2 Node (with no access control mechanisms in place).\n- Recommended data, opposed to Core data, are not cached within WIS2 by the Global Caches, therefore are accessible directly on the WIS2 Node. Recommended data may be provided with conditions on use and/or subject to a license and may have access controls applied at the WIS2 Node.\n- Data archives are also usually accessed directly via the WIS2 Node, given that Global Caches provide only short-term data hosting (for instance, for 24 hours).\n- Guidelines: Guide to the WMO Information System, Volume II. WMO Information System 2.0. WMO-No. 1061\n- Annex 1 of Resolution 1 (Cg Ext (2021)), the WMO Unified Policy for the International Exchange of Earth System Data, lists the core and recommended data to be exchanged for the following Earth system domains: weather, climate, hydrology, atmospheric composition, cryosphere, oceans, and space weather. WMO-No. 1281\n- Manual on the WMO Information System, Volume II – WMO Information System 2.0. Annex VII to the WMO Technical Regulations. WMO-No. 1060",
+      "personas": [
+        "Data Analyst"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "3"
+      }
+    },
+    {
+      "bpmnTask": "Activity_08rjx39",
+      "activityId": "CHUD.C4",
+      "name": "Perform QA on the data",
+      "description": "- The epidemiological and climate data retrieved by the data unification system undergoes quality control verifications. This might imply checking for data completeness, consistency and accuracy but also validating the data against data standards (FHIR for EPI data, WIS 2.0 for climate data).\n- The approach to data quality assurance will vary, with well-resourced nations increasingly leveraging automated processes for real-time consistency checks, while countries with emerging data systems may still rely on essential manual verification and communication with data providers to address complicated errors.",
+      "personas": [
+        "Data Analyst"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "4"
+      }
+    },
+    {
+      "bpmnTask": "Activity_0slaupp",
+      "activityId": "CHUD.C5",
+      "name": "Parse the data",
+      "description": "- The system parses the epidemiological and climate data/products retrieved from different sources to ensure the data is in the expected format.",
+      "personas": [
+        "Data Analyst"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "5"
+      }
+    },
+    {
+      "bpmnTask": "Activity_1jswu89",
+      "activityId": "CHUD.C6",
+      "name": "Perform spatial and temporal harmonization",
+      "description": "- This process acts as the bridge between the disparate data sources, aligning meteorological data (often gridded or point-based) and epidemiological data (aggregated by administrative boundaries) into a consistent framework; this is executed by a data analyst and/or the system depending on the infrastructure available (ranging from manual approaches to fully automated pipelines).\n- The data analyst and/or system performs temporal harmonization by converting high-frequency climate data (e.g., daily or hourly readings) into standard 7-day epidemiological weeks to match the health reporting cadence, applying configurable aggregation logic (e.g., mean, min, max) to accurately represent that week's conditions.\n- Spatial harmonization is achieved by mapping and aggregating data to the target administrative level (e.g., District), which involves handling resolution mismatches through techniques like downscaling coarse global forecast models (e.g., from 30 km to 2 km) or aggregating gridded data to fit district polygons.\n- To ensure robust modeling inputs, the workflow accounts for data discrepancies and uncertainties ensuring that the unified dataset compares \"like with like\".",
+      "personas": [
+        "Data Analyst"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "6"
+      }
+    },
+    {
+      "bpmnTask": "Activity_0gvprqm",
+      "activityId": "CHUD.C7",
+      "name": "Unify the data",
+      "description": "- The system automatically unifies the two separate data streams (epidemiological and climate) into a unified repository making the data ready to be used in the prediction model(s).",
+      "personas": [
+        "Data Analyst"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "7"
+      }
+    }
+  ],
+  "unmatched": [],
+  "unannotated": [
+    "Activity_07rmbfv"
+  ]
+}
