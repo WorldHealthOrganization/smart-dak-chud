@@ -1,0 +1,72 @@
+# Generic Personas - SMART DAK CHUD v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Business Requirements**](business-requirements.md)
+* **Generic Personas**
+
+## Generic Personas
+
+The CHUD solution operates at the national level. This national infrastructure enables the effective implementation of Climate-Informed Early Warning Systems, transforming raw surveillance and weather data into actionable district-level risk forecasts. A centralized approach facilitates the standardization of core data dictionaries and harmonization protocols, promoting interoperability between the Ministry of Health and National Meteorological Services.
+
+### Targeted generic personas
+
+The targeted personas for this CHUD DAK are stakeholders operating in settings where they manage meteorological data exchange or provide essential health interventions (specifically regarding Dengue surveillance and response). In this case, the Data Publisher, Data Collection or Production Center, Global Service Operator, and Global Information System Centers form the meteorological backbone, while the Healthcare Worker, Surveillance Officer, and Data Analyst form the health response layer. In the health systems surveyed for this DAK, the common combination of service providers involves the collaboration between meteorological technical staff (providing climate data) and public health officers (utilizing data for prediction). The key competences of these personas are defined by WMO technical regulations and WHO health workforce guidelines.
+
+The key competences of Health Service Manager and Healthcare worker are defined by WHO as follows (Table 3) (32).
+
+#### Table 3. Descriptions of key generic personas
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| **Data Publisher** | A designated centre for the management and production of data and metadata via a WIS Node.This Persona can also be classified within one of the following sub-categories:**National Centre (NC)**A designated centre for the national management and production of data and metadata via a WIS Node.NCs shall use WIS to provide data and products that are consistent with its programme responsibilities. These data and products shall be provided with associated metadata in accordance with WIS practices, procedures and specifications. Each NC shall participate, as appropriate, in the relevant monitoring of the performance of WIS.National Centres (NCs) will collect and distribute data on a national basis and will coordinate or authorize the use of the WIS by national users, normally under a policy established by the respective Permanent Representative with WMO.**Data Collection or Production Center (DCPC)**A designated centre for the regional management and production of data and metadata via a WIS Node.DCPC responsibilities include with real-time functions of data sharing, provision of relevant, up-to-date discovery metadata, coordination functions with the associated GISC, adherence to WIS standards, and relevant data exchange policies and access rights.Connected to the GISCs, the Data Collection or Production Centres (DCPCs) will be responsible for the collection or generation of sets of data, forecast products, processed or value-added information, and/or for providing archiving services.Collect information intended for dissemination to NCs within its area of responsibility (i.e. regional collections) | National Centre (NC)National Meteorological Center (NMC)Data Collection or Production Center (DCPC)Regional Specialised Meteorological Centres (RSMC)World Meteorological Centre (WMC)Regional Telecommunication Hub (RTH)Regional Telecommunication Hubs (RTH) that are part of the Main Telecommunication Network (MTN) | N/A |
+| **Global Service Operator** | Responsible for ensuring the brokering, caching, and monitoring, of WIS2.0 global data exchange environment.This Persona can also be classified within one of the following sub-categories:**Global Discovery Catalogue**A Global Discovery Catalogue shall provide a web-based API, enabling data consumers to browse and search metadata for the data published via WIS, review summary information for datasets, and discover actionable links to where they can further interact with those datasets (download data, subscribe to updates, access more detailed metadata, etc.)**Global Broker**Global Broker shall provide a highly available Message Broker for distributing notifications in near real time to subscribers. A Global Broker shall subscribe to notifications from WIS centres and Global Services, republish notifications from WIS nodes and Global Caches, republish notifications from other Global Brokers to ensure the redundant and reliable transmission of notifications.**Global Cache**A Global Cache subscribes to notifications about the availability of discovery metadata records and core data for real-time or near-real-time exchange, discarding any duplicate notifications. It downloads and stores a copy of these records and data from WIS nodes and other Global Caches, providing a highly available storage and download service for access. Additionally, the Global Cache operates a Message Broker and retains copies of the stored data for a duration compatible with the data's schedule, ensuring it is kept for not less than 24 hours. Finally, it publishes notifications via its Message Broker regarding the copies it makes available, using a standardized topic structure. |   |   |
+| **Global Coordinator** | Responsible for sharing, training, support, and the provision of Global Services. A designated centre for data sharing, training, support, and the provision of Global Services.For regional and global connectivity, Global Information System Centres (GISCs) will collect and distribute the information meant for routine global dissemination, while serving as collection and distribution centres in their areas of responsibilities; providing entry points, through unified portals and comprehensive metadata catalogues, for any request for data held within the WIS.• Coordination of data sharing within its Area of Responsibility (AoR)• Provision of training, support and other capacity building activities to WIS centres within its AoR• Supporting continual improvement in the quality of the discovery metadata published by WIS centres within its AoR• Provision of any Global Services included in the service offer• Monitoring system performance and data availability in its AoR• Coordinating the global operational performance of WIS• Incident management | Global Information System Centers (GISC)World Meteorological Centre (WMC)Regional Telecommunication Hubs (RTH) that are part of the Main Telecommunication Network (MTN) | N/A |
+| **Healthcare worker** | A health care worker is any individual engaged in the provision of health-related services aimed at promoting, maintaining, or restoring physical, mental, and social well-being. This includes a broad range of roles - from clinical diagnosis and treatment to personal care and psychosocial support - delivered across various settings and levels of specialization. Health care workers may operate independently or under supervision.Healthcare workers are responsible for receiving the heat event alert and responding appropriately given predefined protocols or guidance typically based on local frameworks or Heat Health Action Plans. | Generalist medical practitioner, physician, family doctorSpecialist medical practitionerHealth care assistantNurseCommunity health workerSocial work and counselling professionals | 2211 (Generalist medical practitioners)2212 (Specialist medical practitioners)5321 (Health care assistants)2221 (Nursing professionals)3253 (community health workers)3259 (health associate professionals not classified elsewhere)2635 (Social work and counselling professionals) |
+| **Surveillance Officer** | Surveillance officers coordinate data collection and verification from community health workers, healthcare facilities, and laboratories. They analyse lab-based and clinical data to monitor disease trends, identify and investigate outbreaks or alerts. They also communicate findings to national health authorities and guide response measures. Different geographic or administrative regions such as national or sub-national levels could have dedicated epidemiologists. | Facility surveillance officer, district surveillance officer, regional surveillance officer, national surveillance officer, public health officer | 3259 - Health Associate Professionals Not Elsewhere Classified |
+| **Data Analyst** | A health sector data analyst collects, cleans, and interprets epidemiological, entomological and environmental data to support disease surveillance and outbreak prediction. They might use a data unification system to automate the data collection, cleaning and harmonization. They collaborate with healthcare professionals, especially surveillance officers, to validate the data that is ingested into outbreak prediction tools. Their work enhances early warning systems, improves response strategies, and supports evidence-based interventions. Strong analytical thinking, technical proficiency, and communication skills are required competencies for a data analyst working in the health sector. |   | N/A |
+
+### Related personas
+
+In addition to the targeted personas detailed above, there may be value in exploring other health worker occupational groups and personas within the context of a heat-health alert system, such as client and surveillance officer. However, these were not identified as the central personas for the data and decision-support content detailed in this DAK. Additional related personas are listed in Table 4.
+
+#### Table 4. Descriptions of related personas
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| **Patient** | An individual who presents at a designated Health Facility and meets the clinical case definition for Suspected or Confirmed Dengue. | Client, health service user, individual seeking care | N/A |
+| **Data consumer** | An individual, system, or organization that discovers, subscribes to, and retrieves data or products for use in decision-making or applications | Modeller, Downstream data user |   |
+
+### Key settings
+
+The CHUD solution operates at the intersection of meteorological data infrastructure and public health systems:
+
+**Meteorological Setting:** WIS encompasses three types of centres. Global Information System Centres (GISCs) provide global connectivity and unified portals. Connected to these are Data Collection or Production Centres (DCPCs) responsible for regional data and forecast products. National Centres (NCs) operate on a national basis to distribute data to national users.
+
+**Health Setting:** Healthcare workers operate in clinical and community settings (primary care, hospitals) to identify Dengue cases. Surveillance Officers and Data Analysts typically operate at district, regional, or national public health offices, utilizing centralized infrastructure to generate insights.
+
+### Digital services
+
+The table below lists and describes digital services relevant for a CHUD system, derived from the business requirements and personas needs.
+
+#### Table 5. Description of digital services
+
+| | |
+| :--- | :--- |
+| **Interoperability Layer** | Provides software capabilities to support managed data exchange and interoperability between applications and services across the digital health enterprise. This service acts as the bridge, allowing the CHUD to automatically ingest meteorological data from WIS nodes and health data from national repositories |
+| **Data Warehouse** | An enterprise system used for the analysis and reporting of structured and semi-structured data from multiple sources. It serves as the central repository where historical climate and health data are stored, cleaned, and made available for the analytics engine. |
+| **Health Management Information System (HMIS)** | Stores routinely collected aggregate healthcare data and facilitates their analysis. This service provides the baseline epidemiological data (case counts) required for a CHUD system. |
+
+### Additional considerations for contextualizing personas
+
+Although this section provides an overview of the generic roles of the targeted personas, it will be important to contextualize these personas to your setting. The generic personas can be supplemented by reflecting on these additional considerations:
+
+* **background and demographics:** such as gender, age, whether they are from the community, familiarity with digital devices and whether they have access to a mobile phone or smartphone
+* **local environment and any relevant contextual information** about their surroundings such as work-site characteristics, rural/urban location, availability of electricity, water and internet and distance from the nearest referral facility
+* **expected roles and responsibilities** based on the country context and how does these differ from the roles and responsibilities defined by WMO/WHO
+* **actual roles and responsibilities** whether there is any difference from expected roles and responsibilities
+* **context** such as internet connectivity, how personas are compensated, distance from the nearest referral facility and which other personas or health workers they interact with
+* **the day-to-day challenges** the end-user may face
+* **motivations** such as what does success looks like to them and whether there are targets they need to achieve
+
+For more details on persona development, please refer to the WHO Digital transformation handbook for primary health care: optimizing person-centred point of service systems (34).
+

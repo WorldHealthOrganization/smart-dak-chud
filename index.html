@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - SMART DAK CHUD v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+    <!-- deploy-log-start -->
+    <meta name="deploy-log" content="step=checkout; commit=a168d352; branch=main; ts=2026-11-19T08:06:38Z">
+    <meta name="deploy-log" content="step=ig-build; commit=a168d352; branch=main; ts=2026-11-19T08:09:53Z">
+    <meta name="deploy-log" content="step=postprocessing; commit=a168d352; branch=main; ts=2026-11-19T08:09:57Z">
+    <meta name="deploy-log" content="step=pre-deploy; commit=a168d352; branch=main; ts=2026-11-19T08:09:57Z">
+    <!-- deploy-log-end -->
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting Guidelines for Country use</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="scheduling-logic.html">Scheduling Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="functional-requirements.html">Functional Requirements</a>
+      </li>
+      <li>
+        <a href="non-functional-requirements.html">Non-functional Requirements</a>
+      </li>
+      <li>
+        <a href="system-requirements.html">System Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="trust_domain.html">Trust Domains</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">SMART DAK CHUD</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SMART DAK CHUD, published by WHO. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/WorldHealthOrganization/smart-dak-chud/tree/main'>https://github.com/WorldHealthOrganization/smart-dak-chud/tree/main</a> and changes regularly. See the <a href='history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/WorldHealthOrganization/smart-dak-chud/commit/a168d3520bf9368a43a1896a4f68e9e062f446fd"><code>a168d352</code></a>.</span></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://smart.who.int/dak-chud/ImplementationGuide/smart.who.int.dak-chud<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://smart.who.int/dak-chud/ImplementationGuide/smart.who.int.dak-chud"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://smart.who.int/dak-chud/ImplementationGuide/smart.who.int.dak-chud|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2026-11-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">DAKChud</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#l1-narrative-guidelines" id="markdown-toc-l1-narrative-guidelines">L1 Narrative guidelines</a></li>
+  <li><a href="#l2-operational-guidelines" id="markdown-toc-l2-operational-guidelines">L2 Operational guidelines</a></li>
+  <li><a href="#l3-machine-readable-guidelines" id="markdown-toc-l3-machine-readable-guidelines">L3 Machine readable guidelines</a></li>
+  <li><a href="#l4-executable-guidelines" id="markdown-toc-l4-executable-guidelines">L4 Executable guidelines</a></li>
+  <li><a href="#l5-dynamic-guidelines" id="markdown-toc-l5-dynamic-guidelines">L5 Dynamic guidelines</a></li>
+  <li><a href="#contact-us" id="markdown-toc-contact-us">Contact Us</a></li>
+  <li><a href="#license" id="markdown-toc-license">License</a></li>
+  <li><a href="#providing-feedback" id="markdown-toc-providing-feedback">Providing Feedback</a></li>
+  <li><a href="#disclaimer" id="markdown-toc-disclaimer">Disclaimer</a></li>
+</ul>
+
+</div>
+
+<!---Note: Please keep the div below in the main branch and when publishing the pre-release version of the DAK (v0.9.9). For official published versions, please delete the div from the file.-->
+<div class="stu-note">
+<p> This SMART Guidelines L2 specifications and set of implementation tools are still undergoing development. </p>
+<p> Content is for demonstration purposes only. </p>
+</div>
+
+<h3 id="introduction">Introduction</h3>
+<p>Vector-borne diseases like dengue fever represent a significant and growing public health threat, heavily influenced by climate variability such as changes in temperature and rainfall. While public health officials recognize that outbreaks are intrinsically linked to these climate factors, they face a foundational challenge: epidemiological health data and meteorological climate data are locked in separate, fragmented systems that do not "speak the same language".</p>
+
+<p>Prevention and preparedness require a portfolio of actions that bridge this divide. To transition from reactive response to proactive prevention, health systems must be able to anticipate outbreaks before they peak. This requires the integration of national surveillance data with reliable climate data to feed predictive models. However, this is not merely a technical challenge of moving data; it is a normative challenge of standardizing how disparate sectors collaborate.</p>
+
+<h4 id="purpose-of-this-ig">Purpose of this IG</h4>
+<p>This Implementation Guide (IG) lays out the business specifications for the Climate and Health Data Unification for Dengue Surveillance (CHUD) system. Its primary purpose is to define a clear, standards-based approach for integrating epidemiological and climate data to enable national and sub-national early warning systems. Rather than building new proprietary tools, this IG focuses on the "rules of the road" that allow existing investments, such as national surveillance systems and WMO climate services to interoperate effectively This document is software-agnostic and provides a starting point for Member States to design, develop, and deploy the data unification layer necessary for climate-informed health surveillance, leveraging Digital Public Infrastructure (DPI) where available.</p>
+
+<h4 id="target-audience">Target audience</h4>
+
+<p>The primary target audience of this document comprises national authorities responsible for overseeing national disease surveillance and vector control programs, particularly those establishing data integration pipelines to build and calibrate dengue predictive models. It is also designed for National Meteorological Agencies and climate data publishers tasked with producing and publishing standardized climate data. Additionally, this document serves government partners- including academic institutions, international organizations, NGOs, and technical partners - supporting Member States in the development and deployment of CHUD solutions.</p>
+
+<h4 id="scope">Scope</h4>
+<h5 id="in-scope">In Scope</h5>
+<p>This IG specifically focuses on the data flow, standards, and harmonization processes that feed a district-level dengue prediction model. This document describes a specification for:</p>
+<ul>
+  <li>Data Journey &amp; Unification: Documenting the automated process of ingesting data from health surveillance systems and climate data sources (WIS 2.0) to a central point of unification.</li>
+  <li>Core Data Elements: Defining the minimum essential data required, specifically epidemiological counts and environmental factors such as total rainfall and mean air temperature in Celsius.</li>
+  <li>Harmonization Standards: Detailing the transformation of data to match temporally (converting daily climate data to epidemiological weeks) and spatially (aggregating climate data to district boundaries).</li>
+  <li>Interoperability Standards: Recommending open standards, specifically HL7 FHIR for health data exchange and WMO’s WIS 2.0 for climate data access.</li>
+</ul>
+
+<h5 id="out-of-scope">Out of Scope</h5>
+<p>Aspects that are considered out of the scope of this initial documentation are:</p>
+<ul>
+  <li>Predictive Model Development: The mathematical development, algorithm selection, or calibration of predictive models.</li>
+  <li>Visualization Tools: Documenting specific software for reporting, dashboards, or decision support interfaces.</li>
+  <li>Entomological and other sources of data: While several sources of data are recognized as being also important for district-level modeling, such as mosquito indices and vector data, these have been excluded from this initial phase.</li>
+  <li>Clinical Protocols: The specific clinical care protocols for treating dengue patients once an outbreak is detected.</li>
+  <li>Considerations for monitoring and evaluation of CHUD roll-out and use.</li>
+</ul>
+
+<h4 id="assumptions">Assumptions</h4>
+
+<h5 id="meteorological-data-assumptions">Meteorological data assumptions:</h5>
+
+<h6 id="general-notes">General Notes:</h6>
+
+<ul>
+  <li>
+    <p>The World Meteorological Organization (WMO) Information System (WIS) is the global system through which WMO Members exchange meteorological, hydrological, and climate data in real-time or near-real-time. It ensures interoperability through standardized formats and a unified data catalogue. WIS (including WIS 2.0) enables observations, forecasts, and warnings to circulate seamlessly and consistently worldwide.</p>
+  </li>
+  <li>
+    <p>Real-time or near-real-time data is the range of data mandated for use with WIS2.0. Depending on the needs of the prediction model being used or developed and the data available through WIS2.0 in the specific context, this may require data storage by the model to achieve the desired data elements. Longer time ranges, such as historic data, may be accessible via WIS2.0; however, it is on a case-by-case basis. If historical data is required and not available via WIS2.0, this data should be sought from the nationally designated institutions or other authoritative data providers.</p>
+  </li>
+  <li>
+    <p>Beyond the WMO climate and weather data exchange, international data centers such as NCEI (Data Access; National Centers for Environmental Information (NCEI)) and C3S (Climate Data Store), provide access to internationally exchanged data. If the required data is not accessible via WIS2 or a denser spatial scale of the model or product is required – working directly with nationally designated institutions or other data providers for data access should be considered.</p>
+  </li>
+  <li>
+    <p>For this use-case, it is assumed that the required data for dengue prediction is accessible via WIS2.0 (or WIS2.0 Node).</p>
+  </li>
+</ul>
+
+<h5 id="epidemiological-data-assumptions">Epidemiological data assumptions:</h5>
+
+<ul>
+  <li>
+    <p>The definition of a week should include 7 days and should align with the same standards as used by the epidemiological indicators, known as the epidemiological week.</p>
+  </li>
+  <li>
+    <p>It is assumed that upstream data entering from health facilities contains manual entry errors (e.g., incorrect province names, misspellings). While basic validation is assumed at the source, the unification system acts on the assumption that a secondary automated cleaning phase is required to flag gross inconsistencies before harmonization.</p>
+  </li>
+</ul>
+
+<h3 id="l1-narrative-guidelines">L1 Narrative guidelines</h3>
+<p>This DAK focuses on the following health interventions and recommendations related to a CHUD.</p>
+
+<h4 id="who-universal-health-coverage-interventions-referenced-in-this-dak">WHO universal health coverage interventions referenced in this DAK</h4>
+
+<p>The key interventions for a Climate and Health data Unification for Dengue Surveillance (CHUD) system referenced in this DAK, as defined in the WHO universal health coverage list of essential interventions and WHO guidelines and guidance documents, are the following:</p>
+
+<p>TBC</p>
+
+<h4 id="digital-health-interventions-covered-in-this-dak">Digital health interventions covered in this DAK</h4>
+
+<p>Table 2 lists the digital health interventions incorporated into this DAK, extracted from the WHO Classification of Digital Interventions, Services and Applications in Health (3):</p>
+
+<h4 id="table-2-digital-health-interventions-incorporated-into-the-dak-for-a-heat-health-alert-system">Table 2. Digital health interventions incorporated into the DAK for a heat-health alert system</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>DHI Category</th>
+      <th>DHIs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2.5 Healthcare provider communication</td>
+      <td>2.5.3 Transmit routine news and workflow notifications to healthcare provider(s)<br />2.5.4 Transmit non-routine health event alerts to healthcare provider(s)</td>
+    </tr>
+    <tr>
+      <td>2.7 Scheduling and activity planning for healthcare providers</td>
+      <td>2.7.1 Identify persons in need of services</td>
+    </tr>
+    <tr>
+      <td>3.7 Facility management</td>
+      <td>3.7.1 List health facilities and related information</td>
+    </tr>
+    <tr>
+      <td>4.1 Data Management</td>
+      <td>4.1.2 Data storage and aggregation</td>
+    </tr>
+    <tr>
+      <td>4.3 Geo spatial information management</td>
+      <td>4.3.2 Map location of health event<br />4.3.5 Map health and health indicator data to geographic data</td>
+    </tr>
+    <tr>
+      <td>4.4 Data exchange and interoperability</td>
+      <td>4.4.2 Standards-compliant interoperability</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="who-guidelines-recommendations-and-guidance">WHO guidelines, recommendations and guidance</h4>
+
+<p>The DAKs are intended to reflect health recommendations and content that has already been published in WHO guidelines and guidance documents. The health content and interventions for this DAK are based on the following WHO documents:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Document</th>
+      <th>Document</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://iris.who.int/server/api/core/bitstreams/4d13ec19-9669-4c3a-a2d0-9ac649316e8d/content">Early Warning and Response System (EWARS) for Dengue Outbreaks</a></td>
+      <td><a href="https://iris.who.int/server/api/core/bitstreams/b1db05d8-0e97-469e-b529-464dca6de540/content">Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://iris.who.int/server/api/core/bitstreams/714eb93b-a435-4ab1-a489-c403568cadda/content">Early Warning and Response System (EWARS) - Dengue Edition</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Other, non-WHO, references used in this implementation guide are listed below:</p>
+<ul>
+  <li><a href="https://library.wmo.int/idurl/4/51447">WMO-No. 1131</a></li>
+  <li><a href="https://library.wmo.int/idurl/4/68731">WMO-No. 1060</a></li>
+  <li>Guide to the WMO Information System, Volume II. WMO Information System 2.0. <a href="https://library.wmo.int/idurl/4/69130">WMO-No. 1061</a></li>
+  <li>Climate Data Management System Specifications. <a href="https://library.wmo.int/idurl/4/51447">WMO-No. 1131</a></li>
+  <li><a href="https://library.wmo.int/records/item/57850-world-meteorological-congress">WMO-No. 1281</a></li>
+  <li>Guide to the WMO Information System, Volume II. WMO Information System 2.0. <a href="https://library.wmo.int/idurl/4/69130">WMO-No. 1061</a></li>
+</ul>
+
+<h3 id="l2-operational-guidelines">L2 Operational guidelines</h3>
+
+<ul>
+  <li>
+    <p>Implementation tools:</p>
+
+    <ul>
+      <li>
+        <p><a href="https://worldhealthorganization.github.io/smart-dak-chud/business-processes.html">Link to the editable files of business processes, in .bpmn format</a></p>
+      </li>
+      <li>
+        <p><a href="https://worldhealthorganization.github.io/smart-dak-chud/dictionary.html">Link to core data dictionary</a></p>
+      </li>
+      <li>
+        <p>Decision-support logic is not available at the moment.</p>
+      </li>
+      <li>
+        <p>Scheduling logic is not available at the moment.</p>
+      </li>
+      <li>
+        <p>Indicators are not available at the moment.</p>
+      </li>
+      <li>
+        <p><a href="https://worldhealthorganization.github.io/smart-dak-chud/system-requirements.html">Link to functional and non functional requirements</a>.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="l3-machine-readable-guidelines">L3 Machine readable guidelines</h3>
+<p>The L3 FHIR Implementation Guide for the CHUD L2 SMART Guidelines is yet to be published. Links will be published here as soon as they're available.</p>
+
+<h3 id="l4-executable-guidelines">L4 Executable guidelines</h3>
+<p>Reference implementations representing the L4 layer for the the CHUD L2 Guidelines are not yet available. Links will be published here as soon as they're available.</p>
+
+<h3 id="l5-dynamic-guidelines">L5 Dynamic guidelines</h3>
+<p>Content representing the L5 layer for the CHUD L2 SMART Guidelines are not yet available. Links will be published here as soon as they're available.</p>
+
+<h3 id="contact-us">Contact Us</h3>
+<p>Please let us know about your experience in using this L2 specifications and questions you may have by contacting us at <a href="mailto:SMART@who.int?subject = HHAS L2 Feedback">SMART@who.int</a></p>
+
+<h3 id="license">License</h3>
+<p>This work is licensed under a
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/igo/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License</a>.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/igo/"><img src="https://i.creativecommons.org/l/by-nc-sa/3.0/igo/88x31.png" alt="CC BY 3.0" /></a></p>
+
+<p>For more license details please see the <a href="https://worldhealthorganization.github.io/smart-dak-chud/license.html">license page</a>.</p>
+
+<h3 id="providing-feedback">Providing Feedback</h3>
+
+<p>
+    Feedback specific to this specification can provided through:
+  </p>
+<ul>
+    <li>Clicking on one of the Feedbacks link to the right of any section header</li>
+    <li>Sending an email to <a href="mailto:SMART@who.int?subject = DAK Feedback">SMART@who.int</a></li>
+    <li>Creating an issue on GitHub <a href="https://github.com/WorldHealthOrganization/dak-chud">dak-chud repository</a></li>
+  </ul>
+
+<!---Note: Please keep the dsiclaimer note below in the main branch and when publishing the pre-release version of the DAK (v0.9.9). For official published versions, please delete the note from the file.-->
+<h3 id="disclaimer">Disclaimer</h3>
+<p>The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.</p>
+
+
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.dak-chud#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 19, 2026 08:09+0000">2026-11-19</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

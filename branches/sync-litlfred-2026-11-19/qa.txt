@@ -1,0 +1,43 @@
+DAKChud : Validation Results
+=========================================
+
+err = 3, warn = 23, info = 1, broken links = 0
+IG Publisher Version: 3.0.4
+Generated Thu Nov 19 07:56:46 UTC 2026. FHIR version 4.0.1 for smart.who.int.dak-chud#0.1.0 (canonical = http://smart.who.int/dak-chud)
+ Build Errors : 1 / 20 / 0
+ /work/fsh-generated/resources/ImplementationGuide-smart.who.int.dak-chud : 2 / 3 / 2
+</table>
+
+== n/a ==
+WARNING: ImplementationGuide.definition.parameter: The folder input/testing is a page folder (path-pages), and input/testing is a resource folder (path-resource). Files that are loaded as resources will not also be published as pages; if there are files in the folder that are not resources, and that need to be published, move them to a folder that is not a resource folder
+WARNING: /work/output/dak-api.html: The html source is not well formed: Found "</div>" expecting "</hr>" at line 355 column 7
+WARNING: /work/output/dak-api.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 360 column 7
+WARNING: /work/output/dak-api.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 361 column 7
+WARNING: /work/output/dak-api.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 362 column 7
+WARNING: /work/output/dak-api.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 363 column 7
+WARNING: /work/output/dak-api.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 364 column 7
+ERROR: /work/output/references.html: The page skips a heading level: <h4> 'WHO guidelines, recommendations and guidance' (id=who-guidelines-recommendations-and-guidance) follows <h2> 'References', so it should be <h3>. Heading levels must not skip a level going down (WCAG compliance test)
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 8
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 12
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 20
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 16
+WARNING: /work/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 12
+WARNING: /work/output/testing.html: Illegal HTML: illegal html element: static_server_port ( e.g. http://localhost:8087)
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+
+
+== fsh-generated/resources/ImplementationGuide-smart.who.int.dak-chud.json ==
+ERROR: ImplementationGuide/smart.who.int.dak-chud: ImplementationGuide.meta.profile[0]: Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide)
+WARNING: ImplementationGuide/smart.who.int.dak-chud: ImplementationGuide.meta.profile[0]: A definition could not be found for Canonical URL 'SMARTImplementationGuide'
+ERROR: ImplementationGuide/smart.who.int.dak-chud: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)
+WARNING: ImplementationGuide/smart.who.int.dak-chud: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package smart.who.int.base#0.2.0 released on 2025-04-02, but the most recent appropriate version is 1.0.0. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/smart.who.int.dak-chud: ImplementationGuide.meta.profile[0]: Profile reference 'SMARTImplementationGuide' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: Resource: The resource ImplementationGuide/smart.who.int.dak-chud could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+

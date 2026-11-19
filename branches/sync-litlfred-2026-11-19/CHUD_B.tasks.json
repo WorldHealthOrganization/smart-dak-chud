@@ -1,0 +1,224 @@
+{
+  "$schema": "dak-task-annotations/v1",
+  "bpmn": "CHUD_B.bpmn",
+  "process": "CHUD.B",
+  "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+  "heading": "Process B: Provision of meteorological data/products — business process notes and annotations",
+  "tasks": [
+    {
+      "bpmnTask": "Activity_1uqwgqc",
+      "activityId": "CHUD.B1",
+      "name": "Publish meteorological data/products",
+      "description": "- The Data Publisher publishes data and metadata to the Climate Data Management System (CDMS) to be stored, managed, and analysed. Data can include raw data or products.\n- Guideline: Climate Data Management System Specifications. WMO-No. 1131",
+      "personas": [
+        "Data publisher"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "1"
+      }
+    },
+    {
+      "bpmnTask": "Activity_19q5qps",
+      "activityId": "CHUD.B3",
+      "name": "Publish the discovery metadata",
+      "description": "- The Data Publisher publishes to its WIS node the discovery metadata that describes the data it makes available and how those data can be accessed. It will further publish a notification message to its Message broker, announcing the availability of new data.\n- Discovery metadata must be published in the Global Discovery Catalogues before the data are published.\n- Guidelines: Manual on the WMO Information System, Volume II – WMO Information System 2.0. Annex VII to the WMO Technical Regulations. WMO-No. 1060\n- Guide to the WMO Information System, Volume II. WMO Information System 2.0. WMO-No. 1061",
+      "personas": [
+        "Data publisher"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "3"
+      }
+    },
+    {
+      "bpmnTask": "Activity_1f3hfal",
+      "activityId": "CHUD.B4",
+      "name": "Validate and assess discovery metadata record",
+      "description": "- The Global Discovery Catalogue will subscribe to notifications concerning the addition, updating, or deletion of discovery metadata records in the WIS centers.\n- On receipt of a notification about new or updated discovery metadata, the Global Discovery Catalogue will download and validate a copy of the discovery metadata record, against the WMO Core Metadata Profile 2 (WCMP2), before inserting the record into the catalogue.\n- Validation ensures compliance with the specification, while the assessment evaluates the discovery record against good practices.\n- The Global Discovery Catalogue will periodically assess discovery metadata provided by Data Publishers [National Centers (NCs) and Data Collection or Production Centers (DCPCs)] against a set of key performance indicators (KPIs) in support of continuous improvement. Suggestions for improvement will be reported to the Global Monitor against the centre identifier associated with the discovery metadata record.\n- Guidelines: Manual on the WMO Information System, Volume II – WMO Information System 2.0. Annex VII to the WMO Technical Regulations. WMO-No. 1060\n- Guide to the WMO Information System, Volume II. WMO Information System 2.0. WMO-No. 1061",
+      "personas": [
+        "Global discovery catalogue"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "4"
+      }
+    },
+    {
+      "bpmnTask": "Gateway_0mnioas",
+      "activityId": "CHUD.B5",
+      "name": "Validation passed?",
+      "description": "",
+      "personas": [
+        "Global discovery catalogue"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "5"
+      }
+    },
+    {
+      "bpmnTask": "Activity_0dbfedh",
+      "activityId": "CHUD.B6",
+      "name": "Publish data/products",
+      "description": "- The data is published on the WIS2 Node.\n- The simplest way to publish data through WIS2 is to persist the data as files and publish those files on a web server.\n- The Data publisher might also provide interactive access to data with APIs, enabling patient applications to request only the data they need.\n- It is important to consider where the data are published. If the data relate to a specific country or territory, they should be published through a National Centre (NC). If they relate to a region, programme, or other specialized function within WMO, they should be published through a Data Collection or Production Centre (DCPC).\n- Guidelines: Guide to the WMO Information System, Volume II. WMO Information System 2.0. WMO-No. 1061",
+      "personas": [
+        "Data publisher"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "6"
+      }
+    },
+    {
+      "bpmnTask": "Activity_15zdkxi",
+      "activityId": "CHUD.B7",
+      "name": "Insert the discovery metadata in the catalogue",
+      "description": "- The Global Discovery Catalogue ingests and publishes the valid discovery metadata records provided by Data Publishers.\n- The Global Discovery Catalogue may amend discovery metadata records to provide details on how to subscribe via Global Brokers to updates about the associated dataset.\n- Guidelines: Manual on the WMO Information System, Volume II – WMO Information System 2.0. Annex VII to the WMO Technical Regulations. WMO-No. 1060\n- Guide to the WMO Information System, Volume II. WMO Information System 2.0. WMO-No. 1061",
+      "personas": [
+        "Global discovery catalogue"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "7"
+      }
+    },
+    {
+      "bpmnTask": "Activity_1p6zu9z",
+      "activityId": "CHUD.B8",
+      "name": "Publish notification about new data/products",
+      "description": "- The Global Broker republishes notifications from WIS nodes and Global Services, including notification messages advertising the availability of new data.\n- Guidelines: Guide to the WMO Information System, Volume II. WMO Information System 2.0. WMO-No. 1061",
+      "personas": [
+        "Global service operator"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "8"
+      }
+    },
+    {
+      "bpmnTask": "Activity_1oy50gc",
+      "activityId": "CHUD.B9",
+      "name": "Provide real-time or near-real-time data/products",
+      "description": "- The Global Cache provides a highly available data server, from which a data consumer can download core data. As per clause 3.2.13 of the Manual on WIS, Volume II, data consumers should access core data from the Global Caches.\n- Upon receiving a notification message, the Global Cache downloads a copy of the data referenced in the message from the WIS2 Node, makes these data available on its server, and publishes a new notification message informing data consumers that they can now access these data on its server.\n- The Global Cache will subscribe to notification messages from other Global Caches, enabling it to download and republish data that it has not acquired directly from WIS2 Nodes. This ensures that each Global Cache holds data from every WIS2 Node.\n- Guidelines: Guide to the WMO Information System, Volume II. WMO Information System 2.0. WMO-No. 1061\n- Manual on the WMO Information System, Volume II – WMO Information System 2.0. Annex VII to the WMO Technical Regulations. WMO-No. 1060",
+      "personas": [
+        "Global cache"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "9"
+      }
+    },
+    {
+      "bpmnTask": "Activity_1xpwag5",
+      "activityId": "CHUD.B10",
+      "name": "Notify the Data Publisher",
+      "description": "- The Global Discovery Catalogue will notify the data publisher if the discovery metadata record fails validation and provide recommendations for improvements.\n- Guidelines: Guide to the WMO Information System, Volume II. WMO Information System 2.0. WMO-No. 1061",
+      "personas": [
+        "Global discovery catalogue"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "10"
+      }
+    },
+    {
+      "bpmnTask": "Activity_0fu6hhz",
+      "activityId": "CHUD.B11",
+      "name": "Fix discovery metadata",
+      "description": "- The Data Publisher fixes the issues and re-publishes the discovery metadata record.",
+      "personas": [
+        "Data publisher"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "11"
+      }
+    },
+    {
+      "bpmnTask": "Gateway_1yv11b5",
+      "activityId": "CHUD.B12",
+      "name": "Request for direct access received?",
+      "description": "",
+      "personas": [
+        "Data publisher"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "12"
+      }
+    },
+    {
+      "bpmnTask": "Activity_0rtpo4l",
+      "activityId": "CHUD.B13",
+      "name": "Provide requested data/products",
+      "description": "- A WIS node may restrict access to its core data, relying on Global Caches to provide access to data consumers.\n- Recommended data are never cached by the Global Caches, and may be provided by data publisher with conditions on use. This means that the data publisher may control access to recommended data.\n- If controlled access to the data has been implemented (for example, through the use of an API key), the download link should include a security object which provides the pertinent information (the access control mechanism used, where or how a data consumer needs to register to request access, and so forth).\n- Data publishers must ensure that core data that are not cached (republished on Global Cache) are publicly accessible from their WIS2 Node, that is, with no access control mechanisms in place.\n- Guidelines: Guide to the WMO Information System, Volume II. WMO Information System 2.0. WMO-No. 1061",
+      "personas": [
+        "Data publisher"
+      ],
+      "dataElements": [],
+      "requirements": [],
+      "decisionTables": [],
+      "matchedBy": "name",
+      "source": {
+        "document": "smart-dak-chud:input/pagecontent/business-processes.md",
+        "item": "13"
+      }
+    }
+  ],
+  "unmatched": [
+    {
+      "item": "2",
+      "name": "Quality control (QC) and validate data/products",
+      "reason": "the list prints no step numbers, and no BPMN node has this name"
+    }
+  ],
+  "unannotated": [
+    "Activity_0325uf2",
+    "Activity_03h859f"
+  ]
+}
